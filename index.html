@@ -22,6 +22,9 @@
 						<span class="site-title">Jie Kai Tao</span>
 					</div>
 					<div class="header-nav">
+						<a href="https://github.com/jiekaitao" target="_blank" class="github-btn">
+							<i class="fab fa-github"></i>
+						</a>
 						<a href="elements.html" class="resume-btn">
 							<i class="fas fa-file-alt"></i>
 							Resume
@@ -39,19 +42,19 @@
 						<img src="images/bear_carrot.jpg" alt="Hamster With Carrot" style="width: 500px; height: auto; border-radius: 15%; margin: 0 auto; display: block; margin-bottom: 80px;"/> <!-- 200x200px -->
 						<h1>Jie Kai Tao<br /></h1>
 						<h3>Just a student @ University of Florida</h3>
-						<p>Hello! I'm a Math + Computer Science student with a passion for fluffy Syrian hamsters and Biology.</p>
-						<ul class="actions">
+						<p>Hello! I'm a Math + Computer Science student with a passion for Biology and fluffy Syrian <span class="hamsters-text">hamsters<img src="images/bear_transparent.png" alt="Bear" class="sticky-bear" id="bearImage" /></span></p>
+						<!-- <ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
+						</ul> -->
 					</div>
 
 				<!-- Header -->
 					<header id="header">
-						<span style="pointer-events: none; border-radius: 15px;" class="logo">Cool Stuff! &darr;</span>
+						<a href="#" id="resumeLink" class="logo" style="border-radius: 15px; cursor: pointer;">View Resume</a>
 					</header>
 
 				<!-- Nav -->
-					<nav id="nav">
+					<!-- <nav id="nav">
 						<ul class="links">
 							<li class="active"><a href="index.html">Projects</a></li>
 							<li><a href="generic.html">International Scholar Program</a></li>
@@ -59,17 +62,24 @@
 							<li><a href="elements.html">CV / Resume</a></li>
 						</ul>
 						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://github.com/jiekaitao" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="mailto:jietao@ufl.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="tel:+13056060188" class="icon solid fa-phone"><span class="label">Phone</span></a></li>
 						</ul>
-					</nav>
+					</nav> -->
+
+				<!-- Coming Soon Section -->
+					<div id="coming-soon">
+						<div class="coming-soon-content">
+							<h2>Coming Soon...</h2>
+							<p>This site is currently under construction. Please check back soon!</p>
+						</div>
+					</div>
 
 				<!-- Main -->
-					<div id="main">
+					<!-- <div id="main">
 
-						<!-- Featured Post -->
+						Featured Post
 							<article class="post featured">
 								<header class="major">
 									<span class="date">April 25, 2017</span>
@@ -85,7 +95,7 @@
 								</ul>
 							</article>
 
-						<!-- Posts -->
+						Posts
 							<section class="posts">
 								<article>
 									<header>
@@ -161,10 +171,10 @@
 								</article>
 							</section>
 
-						<!-- Footer -->
+						Footer
 							<footer>
 								<div class="pagination">
-									<!--<a href="#" class="previous">Prev</a>-->
+									<a href="#" class="previous">Prev</a>
 									<a href="#" class="page active">1</a>
 									<a href="#" class="page">2</a>
 									<a href="#" class="page">3</a>
@@ -176,10 +186,10 @@
 								</div>
 							</footer>
 
-					</div>
+					</div> -->
 
 				<!-- Footer -->
-					<footer id="footer">
+					<!-- <footer id="footer">
 						<section>
 							<form method="post" action="#">
 								<div class="fields">
@@ -218,21 +228,37 @@
 							<section>
 								<h3>Social</h3>
 								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://github.com/jiekaitao" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="mailto:jietao@ufl.edu" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="tel:+13056060188" class="icon solid alt fa-phone"><span class="label">Phone</span></a></li>
 								</ul>
 							</section>
 						</section>
 					</footer>
 
-				<!-- Copyright -->
+				Copyright
 					<div id="copyright">
 						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+					</div> -->
 
 			</div>
+
+		<!-- Bear Modal -->
+		<div id="bearModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<img src="images/bear_carrot.jpg" alt="Bear with Carrot" class="modal-image" />
+				<p class="modal-caption">The Carrot Flute is a one-of-a-kind instrument that not even Jacob Collier has.</p>
+			</div>
+		</div>
+
+		<!-- Resume Modal -->
+		<div id="resumeModal" class="modal">
+			<div class="modal-content resume-modal">
+				<span class="close">&times;</span>
+				<iframe src="assets/Tao_Resume.pdf" class="resume-iframe" frameborder="0"></iframe>
+			</div>
+		</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -242,6 +268,74 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<!-- Modal Scripts -->
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					// Bear Modal
+					const bearImage = document.getElementById('bearImage');
+					const bearModal = document.getElementById('bearModal');
+					
+					// Resume Modal
+					const resumeLink = document.getElementById('resumeLink');
+					const resumeModal = document.getElementById('resumeModal');
+					
+					// All close buttons
+					const closeBtns = document.querySelectorAll('.close');
+
+					// Open bear modal when bear is clicked
+					if (bearImage) {
+						bearImage.addEventListener('click', function() {
+							bearModal.style.display = 'block';
+							document.body.style.overflow = 'hidden';
+						});
+					}
+
+					// Open resume modal when resume link is clicked
+					if (resumeLink) {
+						resumeLink.addEventListener('click', function(e) {
+							e.preventDefault();
+							resumeModal.style.display = 'block';
+							document.body.style.overflow = 'hidden';
+						});
+					}
+
+					// Close modal when X is clicked
+					closeBtns.forEach(function(closeBtn) {
+						closeBtn.addEventListener('click', function() {
+							const modal = closeBtn.closest('.modal');
+							modal.style.display = 'none';
+							document.body.style.overflow = 'auto';
+						});
+					});
+
+					// Close modal when clicking outside the content
+					[bearModal, resumeModal].forEach(function(modal) {
+						if (modal) {
+							modal.addEventListener('click', function(e) {
+								if (e.target === modal) {
+									modal.style.display = 'none';
+									document.body.style.overflow = 'auto';
+								}
+							});
+						}
+					});
+
+					// Close modal with Escape key
+					document.addEventListener('keydown', function(e) {
+						if (e.key === 'Escape') {
+							if (bearModal.style.display === 'block') {
+								bearModal.style.display = 'none';
+								document.body.style.overflow = 'auto';
+							}
+							if (resumeModal.style.display === 'block') {
+								resumeModal.style.display = 'none';
+								document.body.style.overflow = 'auto';
+							}
+						}
+					});
+				});
+			</script>
 
 	</body>
 </html>
