@@ -7,6 +7,124 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* Custom: Scale entire site to 80% by reducing base font size */
+html {
+	font-size: 12.8pt; /* 80% of 16pt */
+}
+
+	@media screen and (max-width: 1680px) {
+		html {
+			font-size: 9.6pt; /* 80% of 12pt */
+		}
+	}
+
+	@media screen and (max-width: 1280px) {
+		html {
+			font-size: 8.8pt; /* 80% of 11pt */
+		}
+	}
+
+	@media screen and (max-width: 360px) {
+		html {
+			font-size: 8pt; /* 80% of 10pt */
+		}
+	}
+
+/* Top Header Bar */
+#top-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	background: rgba(30, 37, 45, 0.95);
+	backdrop-filter: blur(10px);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	padding: 0;
+}
+
+#top-header .container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+#top-header .header-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	background: linear-gradient(135deg, rgba(24, 191, 239, 0.1), rgba(24, 191, 239, 0.05));
+	border-radius: 0 0 20px 20px;
+	padding: 0 2rem;
+	margin: 0 -2rem;
+}
+
+#top-header .logo-section .site-title {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-weight: 900;
+	font-size: 1.2rem;
+	color: #ffffff;
+	letter-spacing: 0.075em;
+	text-transform: uppercase;
+}
+
+#top-header .resume-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.6rem 1.5rem;
+	background: linear-gradient(135deg, #18bfef, #1a9bc8);
+	color: #ffffff;
+	text-decoration: none;
+	border-radius: 25px;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 0.9rem;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 15px rgba(24, 191, 239, 0.3);
+}
+
+#top-header .resume-btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(24, 191, 239, 0.4);
+	background: linear-gradient(135deg, #1a9bc8, #18bfef);
+	border-bottom: none;
+}
+
+#top-header .resume-btn i {
+	font-size: 1rem;
+}
+
+/* Adjust body padding to account for fixed header */
+body {
+	padding-top: 60px;
+}
+
+/* Responsive adjustments for header */
+@media screen and (max-width: 736px) {
+	#top-header .container {
+		padding: 0 1rem;
+	}
+	
+	#top-header .header-content {
+		padding: 0 1rem;
+		margin: 0 -1rem;
+		border-radius: 0 0 15px 15px;
+	}
+	
+	#top-header .logo-section .site-title {
+		font-size: 1rem;
+	}
+	
+	#top-header .resume-btn {
+		padding: 0.5rem 1.2rem;
+		font-size: 0.8rem;
+	}
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -114,34 +232,6 @@ input, select, textarea {
 		}
 
 /* Type */
-
-	html {
-		font-size: 16pt;
-	}
-
-		@media screen and (max-width: 1680px) {
-
-			html {
-				font-size: 12pt;
-			}
-
-		}
-
-		@media screen and (max-width: 1280px) {
-
-			html {
-				font-size: 11pt;
-			}
-
-		}
-
-		@media screen and (max-width: 360px) {
-
-			html {
-				font-size: 10pt;
-			}
-
-		}
 
 	body {
 		color: #212931;
