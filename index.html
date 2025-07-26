@@ -25,7 +25,7 @@
 						<a href="https://github.com/jiekaitao" target="_blank" class="github-btn">
 							<i class="fab fa-github"></i>
 						</a>
-						<a href="elements.html" class="resume-btn">
+						<a href="#" id="resumeBtnHeader" class="resume-btn">
 							<i class="fas fa-file-alt"></i>
 							Resume
 						</a>
@@ -39,7 +39,7 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<img src="images/bear_carrot.jpg" alt="Hamster With Carrot" style="width: 500px; height: auto; border-radius: 15%; margin: 0 auto; display: block; margin-bottom: 80px;"/> <!-- 200x200px -->
+						<img src="images/me_studio_ghibli.png" alt="Studio Ghibli Style Portrait" style="width: 500px; height: auto; border-radius: 15%; margin: 0 auto; display: block; margin-bottom: 80px;"/> <!-- 200x200px -->
 						<h1>Jie Kai Tao<br /></h1>
 						<h3>Just a student @ University of Florida</h3>
 						<p>Hello! I'm a Math + Computer Science student with a passion for Biology and fluffy Syrian <span class="hamsters-text">hamsters<img src="images/bear_transparent.png" alt="Bear" class="sticky-bear" id="bearImage" /></span></p>
@@ -278,6 +278,7 @@
 					
 					// Resume Modal
 					const resumeLink = document.getElementById('resumeLink');
+					const resumeBtnHeader = document.getElementById('resumeBtnHeader');
 					const resumeModal = document.getElementById('resumeModal');
 					
 					// All close buttons
@@ -294,6 +295,15 @@
 					// Open resume modal when resume link is clicked
 					if (resumeLink) {
 						resumeLink.addEventListener('click', function(e) {
+							e.preventDefault();
+							resumeModal.style.display = 'block';
+							document.body.style.overflow = 'hidden';
+						});
+					}
+
+					// Open resume modal when header resume button is clicked
+					if (resumeBtnHeader) {
+						resumeBtnHeader.addEventListener('click', function(e) {
 							e.preventDefault();
 							resumeModal.style.display = 'block';
 							document.body.style.overflow = 'hidden';
