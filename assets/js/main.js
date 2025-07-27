@@ -255,4 +255,38 @@
 
 		}
 
+	// Custom header navigation toggle
+		var $navToggle = $('#navToggle'),
+			$headerNav = $('.header-nav'),
+			$topHeader = $('#top-header');
+
+		$navToggle.on('click', function(e) {
+			e.preventDefault();
+			$(this).toggleClass('active');
+			$headerNav.toggleClass('active');
+		});
+
+		// Close mobile menu when clicking outside
+		$(document).on('click', function(e) {
+			if (!$(e.target).closest('#top-header').length) {
+				$navToggle.removeClass('active');
+				$headerNav.removeClass('active');
+			}
+		});
+
+		// Close mobile menu when clicking a link
+		$('.nav-links a').on('click', function() {
+			$navToggle.removeClass('active');
+			$headerNav.removeClass('active');
+		});
+
+		// Header scroll effect
+		$(window).on('scroll', function() {
+			if ($(window).scrollTop() > 50) {
+				$topHeader.addClass('scrolled');
+			} else {
+				$topHeader.removeClass('scrolled');
+			}
+		});
+
 })(jQuery);

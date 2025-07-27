@@ -19,17 +19,29 @@
 			<div class="container">
 				<div class="header-content">
 					<div class="logo-section">
-						<span class="site-title">Jie Kai Tao</span>
+						<a href="index.html" class="site-title">Jie Kai Tao</a>
 					</div>
-					<div class="header-nav">
-						<a href="https://github.com/jiekaitao" target="_blank" class="github-btn">
-							<i class="fab fa-github"></i>
-						</a>
-						<a href="#" id="resumeBtnHeader" class="resume-btn">
-							<i class="fas fa-file-alt"></i>
-							Resume
-						</a>
-					</div>
+					<nav class="header-nav">
+						<ul class="nav-links">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="#projects">Projects</a></li>
+						</ul>
+						<div class="header-actions">
+							<a href="https://github.com/jiekaitao" target="_blank" class="github-btn">
+								<i class="fab fa-github"></i>
+								<span>GitHub</span>
+							</a>
+							<a href="#" id="resumeBtnHeader" class="resume-btn">
+								<i class="fas fa-file-alt"></i>
+								<span>Resume</span>
+							</a>
+						</div>
+					</nav>
+					<button class="nav-toggle" id="navToggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
 				</div>
 			</div>
 		</div>
@@ -48,10 +60,6 @@
 						</ul> -->
 					</div>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="#" id="resumeLink" class="logo" style="border-radius: 15px; cursor: pointer;">View Resume</a>
-					</header>
 
 				<!-- Nav -->
 					<!-- <nav id="nav">
@@ -248,7 +256,7 @@
 			<div class="modal-content">
 				<span class="close">&times;</span>
 				<img src="images/bear_carrot.jpg" alt="Bear with Carrot" class="modal-image" />
-				<p class="modal-caption">The Carrot Flute is a one-of-a-kind instrument that not even Jacob Collier has.</p>
+				<p class="modal-caption">Meet Bear, who wields the Carrot Flute, a one-of-a-kind instrument that not even Jacob Collier has.</p>
 			</div>
 		</div>
 
